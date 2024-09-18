@@ -141,6 +141,8 @@ async def braodcast_message(client, message, _):
             except Exception:
                 continue
         try:
+            await message.reply_text("Starting Broadcast...")
+            await asyncio.sleep(1500)
             await message.reply_text(_["broad_1"].format(GCAST_GROUP, pin))
         except:
             pass
@@ -168,6 +170,7 @@ async def braodcast_message(client, message, _):
             except Exception:
                 pass
         try:
+            await asyncio.sleep(1700)
             await message.reply_text(_["broad_7"].format(GCAST_USER))
         except:
             pass
