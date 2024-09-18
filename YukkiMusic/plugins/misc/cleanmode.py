@@ -141,7 +141,7 @@ async def braodcast_message(client, message, _):
             except Exception:
                 continue
         try:
-            await message.reply_text(_["broad_1"].format(sent, pin))
+            await message.reply_text(_["broad_1"].format(GCAST_GROUP, pin))
         except:
             pass
 
@@ -168,7 +168,7 @@ async def braodcast_message(client, message, _):
             except Exception:
                 pass
         try:
-            await message.reply_text(_["broad_7"].format(susr))
+            await message.reply_text(_["broad_7"].format(GCAST_USER))
         except:
             pass
 
