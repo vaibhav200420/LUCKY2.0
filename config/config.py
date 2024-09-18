@@ -9,7 +9,7 @@
 import re
 import sys
 from os import getenv
-import os
+
 from dotenv import load_dotenv
 from pyrogram import filters
 
@@ -48,16 +48,8 @@ EXTRA_PLUGINS = getenv(
     "True",
 )
 
-"""
 # Fill True if you want to load extra plugins
-GCAST_GROUP = os.getenv("GCAST_GROUP")
 
-GCAST_USER = os.getenv("GCAST_USER")
-
-STATS_GROUP = os.getenv("STATS_GROUP")
-
-STATS_USER = os.getenv("STATS_USER")
-"""
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
