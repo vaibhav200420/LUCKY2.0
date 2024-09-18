@@ -18,7 +18,7 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait, MessageIdInvalid
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
-
+from os import getenv
 import config
 from config import BANNED_USERS
 from strings import get_command
@@ -37,7 +37,6 @@ from YukkiMusic.utils.database import (
     get_topp_users,
 )
 
-GROUP_STATS = os.getenv("GROUP_STATS”)
 
 from YukkiMusic.utils.decorators.language import language, languageCB
 from YukkiMusic.utils.inline.stats import (
@@ -49,7 +48,11 @@ from YukkiMusic.utils.inline.stats import (
     top_ten_stats_markup,
 )
 
+
+GROUP_STATS = os.getenv("GROUP_STATS")
+                        
 USER_STATS = os.getenv("USER_STATS")
+
 
 
 loop = asyncio.get_running_loop()
