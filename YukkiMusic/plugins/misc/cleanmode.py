@@ -15,7 +15,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
-import os
+
 import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
@@ -37,9 +37,6 @@ from YukkiMusic.utils.database import (
 )
 from YukkiMusic.utils.decorators.language import language
 from YukkiMusic.utils.formatters import alpha_to_int
-GCAST_USER = os.getenv("GCAST_USER")
-
-GCAST_GROUP = os.getenv("GCAST_GROUP")
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -141,9 +138,7 @@ async def braodcast_message(client, message, _):
             except Exception:
                 continue
         try:
-            await message.reply_text("Starting Broadcast...")
-            await asyncio.sleep(1500)
-            await message.reply_text(_["broad_1"].format(GCAST_GROUP, pin))
+            await message.reply_text(_["broad_1"].format(sent, pin))
         except:
             pass
 
@@ -170,8 +165,7 @@ async def braodcast_message(client, message, _):
             except Exception:
                 pass
         try:
-            await asyncio.sleep(1700)
-            await message.reply_text(_["broad_7"].format(GCAST_USER))
+            await message.reply_text(_["broad_7"].format(susr))
         except:
             pass
 
