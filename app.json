@@ -34,26 +34,6 @@
         "value": "True",
         "required": false
       },
-      "GCAST_USER": {
-        "description": "if You want to load extra plugins with music plugins so fill True  if you don't want to load extra plugins so Fill False",
-        "value": "",
-        "required": false
-      },
-      "GCAST_GROUP": {
-        "description": "if You want to load extra plugins with music plugins so fill True  if you don't want to load extra plugins so Fill False",
-        "value": "",
-        "required": false
-      },
-      "STATS_GROUP": {
-        "description": "if You want to load extra plugins with music plugins so fill True  if you don't want to load extra plugins so Fill False",
-        "value": "",
-        "required": false
-      },
-      "STATS_USER": {
-        "description": "SERVERD USERS COUNT",
-        "value": "",
-        "required": false
-      },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
         "value": "",
