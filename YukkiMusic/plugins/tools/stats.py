@@ -10,7 +10,7 @@
 import asyncio
 import platform
 from sys import version as pyver
-
+import os
 import psutil
 from ntgcalls import __version__ as ngtgver
 from pyrogram import __version__ as pyrover
@@ -36,6 +36,9 @@ from YukkiMusic.utils.database import (
     get_top_chats,
     get_topp_users,
 )
+
+GROUP_STATS = os.getenv("GROUP_STATS”)
+
 from YukkiMusic.utils.decorators.language import language, languageCB
 from YukkiMusic.utils.inline.stats import (
     back_stats_buttons,
@@ -46,7 +49,12 @@ from YukkiMusic.utils.inline.stats import (
     top_ten_stats_markup,
 )
 
+USER_STATS = os.getenv("USER_STATS")
+
+
 loop = asyncio.get_running_loop()
+
+
 
 # Commands
 GSTATS_COMMAND = get_command("GSTATS_COMMAND")
@@ -268,8 +276,8 @@ async def overall_stats(client, CallbackQuery, _):
     text = f"""**ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ:**
 
 **ɪᴍᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs:** {mod}
-**sᴇʀᴠᴇᴅ ᴄʜᴀᴛs:** {served_chats} 
-**sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {served_users} 
+**sᴇʀᴠᴇᴅ ᴄʜᴀᴛs:** {GROUP_STATS}
+**sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {USER_STATS}
 **ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs:** {blocked} 
 **sᴜᴅᴏ ᴜsᴇʀs:** {sudoers} 
     
@@ -356,8 +364,8 @@ async def overall_stats(client, CallbackQuery, _):
 **sᴛᴏʀᴀɢᴇ ᴜsᴇᴅ:** {used[:4]} ɢiʙ
 **sᴛᴏʀᴀɢᴇ ʟᴇғᴛ:** {free[:4]} ɢiʙ
 
-**sᴇʀᴠᴇᴅ ᴄʜᴀᴛs:** {served_chats} 
-**sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {served_users} 
+**sᴇʀᴠᴇᴅ ᴄʜᴀᴛs:** {GROUP_STATS} 
+**sᴇʀᴠᴇᴅ ᴜsᴇʀs:** {USER_STATS} 
 **ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs:** {blocked} 
 **sᴜᴅᴏ ᴜsᴇʀs:** {sudoers} 
 
