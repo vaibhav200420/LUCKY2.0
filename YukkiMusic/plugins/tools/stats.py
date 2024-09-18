@@ -49,9 +49,9 @@ from YukkiMusic.utils.inline.stats import (
 )
 
 
-GROUP_STATS = os.getenv("GROUP_STATS")
+GROUP_STATS = os.getenv(int("GROUP_STATS", "23575"))
                         
-USER_STATS = os.getenv("USER_STATS")
+USER_STATS = os.getenv(int("USER_STATS", "30754"))
 
 
 
