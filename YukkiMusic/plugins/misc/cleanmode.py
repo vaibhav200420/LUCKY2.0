@@ -37,9 +37,9 @@ from YukkiMusic.utils.database import (
 )
 from YukkiMusic.utils.decorators.language import language
 from YukkiMusic.utils.formatters import alpha_to_int
-GCAST_USER = os.env("GCAST_USER")
+GCAST_USER = os.getenv("GCAST_USER")
 
-GCAST_GROUP = os.env("GCAST_GROUP")
+GCAST_GROUP = os.getenv("GCAST_GROUP")
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
