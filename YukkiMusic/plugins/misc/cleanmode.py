@@ -15,7 +15,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
-
+import os
 import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
@@ -37,6 +37,9 @@ from YukkiMusic.utils.database import (
 )
 from YukkiMusic.utils.decorators.language import language
 from YukkiMusic.utils.formatters import alpha_to_int
+GCAST_USER = os.env("GCAST_USER")
+
+GCAST_GROUP = os.env("GCAST_GROUP")
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
