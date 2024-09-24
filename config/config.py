@@ -18,17 +18,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "9722461"))
 
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "f6f8044d6bc9352b8158280cf471cfe2")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6182735759:AAFsGiuErJjmUyJfirirC-8wu-FFps8FsMU")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://userbot:userbot@cluster0.iweqz.mongodb.net/test?retryWrites=true&w=majority")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -70,12 +70,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002343058929"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5927744878").split())
+    map(int, getenv("OWNER_ID", "7108025413").split())
 )  # Input type must be interger
 
 
@@ -109,10 +109,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/KDramaDGGhindidub"
-)  # Example:- https://t.me/TheTeamVivek
+    "SUPPORT_CHANNEL", "https://t.me/K3SHAV_Says"
+)  # Example:- https://t.me/K3SHAV_Says
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/music_bot_support1"
+    "SUPPORT_GROUP", "https://t.me/SECERT_SOClETY"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -137,7 +137,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/music_bot_support1")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/The_LuckyX")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -177,7 +177,7 @@ SET_CMDS = getenv("SET_CMDS", "True")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCUWl0AnuHmiHrJtJU7mdiyuqOrvVivk78N6n6OfdQjSfwr3yefzMb-0jFZ-IdzZzxBnTZBey4CXZBcqsZcoJWS7mCxfkaBGD1SFvIgrSx_d9yrFbukmW7tQWcCjo7eGNRkicaq5kWlvjSn5EkmZ-IF0SQwQJyIoPPYOojG6Srvd6pV6Tvwvy2-aFde5jju3dF-Wj-0W9lwMj_t_lRmY18NGvRwqSNpxAdOnc399-UmmOZCAVL0_XiiH-4Qga6Kgi7WVuwZ0A2PMvOcpLSKLFBtUmjibvU8EokKIn6WIMfOd5l70gCzaVzzBvNp1VPj23cDj-dD0rNJmQAdeDNZGBL-9tdANgAAAAGplbpmAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
