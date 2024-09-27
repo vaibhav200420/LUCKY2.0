@@ -18,18 +18,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "9722461"))
+API_ID = int(getenv("API_ID", "28178139"))
 
-API_HASH = getenv("API_HASH", "f6f8044d6bc9352b8158280cf471cfe2")
+API_HASH = getenv("API_HASH", "85172511f45230b7f8bb304f5ed8e6d8")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6182735759:AAFsGiuErJjmUyJfirirC-8wu-FFps8FsMU")
+BOT_TOKEN = getenv("BOT_TOKEN", "6122249154:AAFoAWAj-GznsJM5ieyVlHhvGcH-6jNGrrI")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://userbot:userbot@cluster0.iweqz.mongodb.net/test?retryWrites=true&w=majority")
-
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Lucky:Lucky@atlascluster.f7lck9c.mongodb.net/?retryWrites=true&w=majority")
 
 CLEANMODE_DELETE_MINS = int(
     getenv("CLEANMODE_MINS", "5")
@@ -39,7 +38,7 @@ CLEANMODE_DELETE_MINS = int(
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "3000")
+    getenv("DURATION_LIMIT", "300")
 )  # Remember to give value in Minutes
 
 
@@ -65,17 +64,21 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "900")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "90")
 )  # Remember to give value in Minutes
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002343058929"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001963452122"))
+
+# Fill in seconds if assistant is muted in voice chat assistant will leave  voice chat after the MUTE_WARNING_TIME
+
+MUTE_WARNING_TIME = int(getenv("MUTE_WARNING_TIME", 100))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7108025413").split())
+    map(int, getenv("OWNER_ID", "5247304559").split())
 )  # Input type must be interger
 
 
@@ -96,7 +99,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/L2LUCKY/KESHAV-OP",
+    "https://github.com/L2LUCKY/LUCKY2.0",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -109,10 +112,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/K3SHAV_Says"
-)  # Example:- https://t.me/K3SHAV_Says
+    "SUPPORT_CHANNEL", "https://t.me/LuckyXUpdate"
+)  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/SECERT_SOClETY"
+    "SUPPORT_GROUP", "https://t.me/LuckyXMusic"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -121,7 +124,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", 1800)
+    getenv("ASSISTANT_LEAVE_TIME", 180)
 )  # Remember to give value in Seconds
 
 
@@ -173,11 +176,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # If you want your bot to setup the commands automatically in the bot's menu set it to true.
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
-SET_CMDS = getenv("SET_CMDS", "True")
+SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BQCUWl0AsD9I38OIBVWg5AUt9cKe1nhDdU1nL4hYSgN7jsNr5sq6LxdqdINqdbPtPGqF2e8z6lpD1VgQA0zwjxnVbF3dYp3wrFInwLKrO70WY9si8yaMq0W6kG5VPDuzU3Ym_rRzlVCbIXCAGL0e0Oh5U9CRX-RI07H9wPnrWK86OebpJEaxR4HADEbVmOoa8B3Dn91mQKijlaB68P1ll30swbFFNWK52zK9d3zDnZjqJ6vEHCEyGoa6xtOvEeY1kEc65f5bFsBj553X-tVijUo0kzqPB50Gx3AaQ1wGLC_CdoavnF0w0_hbRWWSHswReGRaOJycBEZWqpTUf2pcI0YzsYbiLwAAAAGtjqCKAA")
+STRING1 = getenv("STRING_SESSION", "BQGt9tsAbo5pg93xYjpYZQt3V0jBiw_4A18S7bmdcSzcuiFi96egm-CyGvKzDQ2wH6losYr0ia8GX92aPAnvMUq7zAoeyNacsxi_BHYRGg7lYcpD0SxtFjYI-HASkU-r1JVBZslCKBJyfIKyuN9IvFvLUs5ZRBxAwyTmxDSPTcya7zo1ydfxNVI1in-O-fYly_irEMLB8UonilnpV1ketPp8h26LgFz-iDJHpTsLB0Y6j9hN6qat4BPkT9z9_I_4SX1FT-iOahJX4pdz7Wxav8frS7ltRyZ2Yo-9JecC_Q8CHIxzp-7mHIUKLPd3NdJEaLvuGs6HoEe1Ag0mMtQN34Ass3txdgAAAAFlP-m7AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -211,7 +214,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://envs.sh/wY0.jpg",
+    "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg",
 )
 
 PING_IMG_URL = getenv(
