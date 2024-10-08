@@ -24,21 +24,21 @@ API_HASH = getenv("API_HASH", "85172511f45230b7f8bb304f5ed8e6d8")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6122249154:AAFoAWAj-GznsJM5ieyVlHhvGcH-6jNGrrI")
+BOT_TOKEN = getenv("BOT_TOKEN", "6421447649:AAFoH3mp24ACLGnjwIcIYNXvMihI6G4LJFk")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Lucky:Lucky@atlascluster.f7lck9c.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://musicoxic:9ERpeGOTxckFV701@musicoxicz.kyrzfrv.mongodb.net/?retryWrites=true&w=majority&appName=musicoxicz")
 
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "5")
+    getenv("CLEANMODE_MINS", "2")
 )  # Remember to give value in Seconds
 
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "300")
+    getenv("DURATION_LIMIT", "120")
 )  # Remember to give value in Minutes
 
 
@@ -69,7 +69,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001963452122"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002108873378"))
 
 # Fill in seconds if assistant is muted in voice chat assistant will leave  voice chat after the MUTE_WARNING_TIME
 
@@ -78,7 +78,7 @@ MUTE_WARNING_TIME = int(getenv("MUTE_WARNING_TIME", 100))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5247304559").split())
+    map(int, getenv("OWNER_ID", "1750583099").split())
 )  # Input type must be interger
 
 
@@ -99,7 +99,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/L2LUCKY/LUCKY2.0",
+    "https://github.com/vaibhav200420/LUCKY2.0",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -112,10 +112,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/LuckyXUpdate"
+    "SUPPORT_CHANNEL", "https://t.me/Ps_Corporation_Com"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/LuckyXMusic"
+    "SUPPORT_GROUP", "https://t.me/+sW_L1vwSZ1Y4NDQ9"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -140,7 +140,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/The_LuckyX")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Sam_dude2")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -151,7 +151,7 @@ SPOTIFY_CLIENT_SECRET = getenv(
 
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "999"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "120"))
 
 
 # Maximum Limit Allowed for users to save playlists on bot's server
@@ -176,11 +176,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # If you want your bot to setup the commands automatically in the bot's menu set it to true.
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
-SET_CMDS = getenv("SET_CMDS", "False")
+SET_CMDS = getenv("SET_CMDS", "false")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BQGt9tsAbo5pg93xYjpYZQt3V0jBiw_4A18S7bmdcSzcuiFi96egm-CyGvKzDQ2wH6losYr0ia8GX92aPAnvMUq7zAoeyNacsxi_BHYRGg7lYcpD0SxtFjYI-HASkU-r1JVBZslCKBJyfIKyuN9IvFvLUs5ZRBxAwyTmxDSPTcya7zo1ydfxNVI1in-O-fYly_irEMLB8UonilnpV1ketPp8h26LgFz-iDJHpTsLB0Y6j9hN6qat4BPkT9z9_I_4SX1FT-iOahJX4pdz7Wxav8frS7ltRyZ2Yo-9JecC_Q8CHIxzp-7mHIUKLPd3NdJEaLvuGs6HoEe1Ag0mMtQN34Ass3txdgAAAAFlP-m7AA")
+STRING1 = getenv("STRING_SESSION", "BQGCtzAAc2M5Wz1PH4LqElaWcMlUJKIac7j5p6jV_SFn1hLZizxCsBVsQ4m7jl3G8LueazMwUd1-pGO9orWTFPnQeAcuGXbZdbEAqGvLWhr4Rb3PZgq9WW9FWgKKsPnEt746EGPqcJGhMea7nybhYRsTLHmzWnvZdvtIQPHjaw94WD5ntCSv_gj6E1E4aRvWaKejoiT31RDRntnG5MGWDxgvdeBqCO1t0p5MtJs4zmS4TjLo3TkvhFsAIvKDJ8NmUmfQ1NpvSEj-wG30UspuiBnGwYRCStSiEU7EVS6ojNkkQOH071_-GW2qtVpRrzIWET229Wn_glYe3HSuLfhYNgW2SJdnvAAAAAGR1wUkAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -199,7 +199,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "Yukkilogs.txt"
+LOG_FILE_NAME = "sam.txt"
 TEMP_DB_FOLDER = "tempdb"
 adminlist = {}
 lyrical = {}
