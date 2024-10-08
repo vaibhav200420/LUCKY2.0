@@ -176,13 +176,14 @@ class YouTubeAPI:
         results = VideosSearch(link, limit=1)
         result = (await results.next())["result"][0]
 
-        return {
+        track_details = {
             "title": result["title"],
             "link": result["link"],
             "vidid": result["id"],
             "duration_min": result["duration"],
             "thumb": result["thumbnails"][0]["url"].split("?")[0],
         }
+        return track_details  # Return only the dictionary
 
     async def formats(self, link: str):
         ytdl_opts = {"quiet": True, "cookiefile": cookies()}
